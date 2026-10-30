@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15543b">
+  <meta name="description" content="Consultoria Social — atendimento, orientação e acompanhamento social em Ubaitaba, Bahia.">
+  <title>Consultoria Social | Ana Paula Dias e Cecília Andrade</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    /* Ajustes específicos inline para a réplica do folheto */
+    .footer { padding-top: 15px !important; padding-bottom: 15px !important; }
+    
+    /* Estilização da Grade de Serviços baseada no Panfleto */
+    .services-container { background: #fff; border-left: 2px solid var(--green); padding: 40px clamp(20px, 5vw, 60px); margin: 30px 0; }
+    .services-title-panfleto { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.5rem); color: var(--green); margin: 0 0 35px 0; font-weight: 400; line-height: 1.1; }
+    .services-list-panfleto { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px 40px; }
+    .services-list-panfleto > li { font-family: var(--sans); font-size: 1.05rem; font-weight: 500; color: var(--ink); position: relative; padding-left: 24px; line-height: 1.4; }
+    .services-list-panfleto > li::before { content: "•"; color: var(--green); position: absolute; left: 0; top: -2px; font-size: 1.6rem; }
+    
+    /* Sublista de orientações internas */
+    .sub-services-list { list-style: none; padding: 10px 0 0 20px; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    .sub-services-list li { font-size: 0.95rem; color: var(--muted); position: relative; padding-left: 18px; font-weight: 400; }
+    .sub-services-list li::before { content: "◦"; color: var(--green); position: absolute; left: 0; top: -1px; font-size: 1.2rem; font-weight: bold; }
+
+    /* Centralização e ajuste dos botões finais */
+    .contact-buttons-group { display: flex; flex-direction: column; gap: 12px; max-width: 480px; margin: 30px 0 0 0; }
+    .contact-buttons-group .button { width: 100%; text-align: center; justify-content: center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Consultoria Social - início">
+      <img src="assets/image_f9d02dde (1).jpg" alt="Identidade visual Ana Paula Dias e Cecília Andrade — Consultoria Social">
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cta" href="https://wa.me" target="_blank" rel="noopener">Fale conosco</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">ACOLHIMENTO • ORIENTAÇÃO • COMPROMISSO</span>
+        <h1>Um olhar atento para as <em>pessoas</em> e suas realidades.</h1>
+        <p>Consultoria Social com escuta, respeito e compromisso com cada trajetória. Um espaço para conversar, compreender necessidades e construir caminhos possíveis.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="https://wa.me?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Consultoria%20Social." target="_blank" rel="noopener">Entre em contato <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#servicos">Nossos Serviços <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="mark-circle">CS</div>
+        <span>CONSULTORIA<br>SOCIAL</span>
+      </div>
+      <div class="hero-bottom"><span>ANA PAULA DIAS E CECÍLIA ANDRADE</span><span>UBAITABA · BAHIA</span></div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="intro section" id="sobre">
+      <div class="section-kicker">CONSULTORIA SOCIAL</div>
+      <div class="intro-grid">
+        <h2>Escutar também é uma forma de <em>transformar.</em></h2>
+        <div class="intro-copy">
+          <p>A Consultoria Social de Ana Paula Dias e Cecília Andrade tem como princípio uma atuação pautada no respeito, na ética e na valorização das pessoas.</p>
+          <p>Cada realidade merece atenção. Por isso, o primeiro passo é compreender o contexto, acolher as necessidades apresentadas e dialogar sobre possibilidades e encaminhamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Serviços Réplica Estrutural do Panfleto -->
+    <section class="section" id="servicos" style="background-color: var(--cream); padding-top: 40px; padding-bottom: 40px;">
+      <div class="section-kicker">NOSSA ATUAÇÃO</div>
+      
+      <div class="services-container">
+        <h2 class="services-title-panfleto">Nossos<br>serviços:</h2>
+        
+        <ul class="services-list-panfleto">
+          <li>Aposentadorias</li>
+          <li>Auxílio por Incapacidade Temporária</li>
+          <li>Auxílio por Incapacidade Permanente</li>
+          <li>Benefício Assistencial - BPC/LOAS</li>
+          <li>Salário Maternidade</li>
+          <li>Atendimento Interno e Externo (família e comunidade)</li>
+          <li>Elaboração de Relatório Social com parecer</li>
+          <li>Elaboração de Projetos Sociais</li>
+          <li>Perícia Social</li>
+          <li>Oficinas</li>
+          <li>
+            Orientação para:
+            <ul class="sub-services-list">
+              <li>Passe Livre</li>
+              <li>Carteira do Idoso</li>
+              <li>Carteira do Autista</li>
+              <li>Outros benefícios sociais.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção de Contatos e Direcionamentos Finais -->
+    <section class="contact section" id="contato">
+      <div class="contact-heading">
+        <div class="section-kicker">VAMOS CONVERSAR?</div>
+        <h2>Estamos à disposição para <em>ouvir você.</em></h2>
+        <p>Entre em contato para saber mais e conversar sobre sua necessidade.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <a class="contact-item whatsapp" href="https://wa.me" target="_blank" rel="noopener">
+          <span class="contact-icon">↗</span><span><small>WHATSAPP</small><strong>(73) 8101-4774</strong></span>
+        </a>
+        <a class="contact-item" href="https://instagram.com" target="_blank" rel="noopener">
+          <span class="contact-icon">◎</span><span><small>INSTAGRAM</small><strong>@consultoriasocial.ac</strong></span>
+        </a>
+        <a class="contact-item" href="mailto:consultoriasocial.ac@gmail.com">
+          <span class="contact-icon">✉</span><span><small>E-MAIL</small><strong>consultoriasocial.ac@gmail.com</strong></span>
+        </a>
+        <div class="contact-item address">
+          <span class="contact-icon">⌖</span><span><small>ENDEREÇO</small><strong>Rua Alfredo Ferreira, 340, 1º andar<br>Centro, Ubaitaba – BA</strong></span>
+        </div>
+      </div>
+
+      <!-- Grupo de Botões Finais de Redirecionamento Profissional -->
+      <div class="contact-buttons-group">
+        <a class="button button-green" href="https://wa.me?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener">
+          Fale conosco pelo WhatsApp ↗
+        </a>
+        <a class="button" href="https://instagram.com" target="_blank" rel="noopener" style="background-color: transparent; border: 1px solid var(--green); color: var(--green);">
+          Acesse nosso perfil no Instagram ◎
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#inicio" class="footer-name">CONSULTORIA SOCIAL</a>
+    <p>Ana Paula Dias e Cecília Andrade</p>
+    <span>© <span id="year"></span> · Todos os direitos reservados</span>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
